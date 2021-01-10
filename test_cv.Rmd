@@ -1,0 +1,133 @@
+---
+title: "Andre Duarte's resume"
+author: Andre Duarte
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+# uncomment this line to produce HTML and PDF in RStudio:
+knit: pagedown::chrome_print
+---
+
+Aside
+================================================================================
+
+
+![Andre Duarte](https://avatars1.githubusercontent.com/u/41544311?s=460&v=4){width=80%}
+
+
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> aarbduarte [at] gmail.com
+- <i class="fa fa-github"></i> [github.com/aarbduarte](https://github.com/aarbduarte)
+- <i class="fa fa-phone"></i> +351 93 331 53 56
+- For more information, please contact me via email.
+
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+- RNA-seq data processing and alignment.
+
+- Identification, quantification and analysis of Alternative Splicing.
+
+- QTL mapping.
+
+- Experienced in R, less so in python and BASH.
+
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+
+Last updated on `r Sys.Date()`.
+
+
+
+Main
+================================================================================
+
+Andre Duarte {#title}
+--------------------------------------------------------------------------------
+
+### Currently searching for a Master's research scholarship/sponsorship
+
+Fresh out of academia, looking for a junior position to gain experience.
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### University of Algarve, Faculty of Medicine and Biomedical Sciences
+
+M.S. in Oncobiology - Molecular Mechanisms in Cancer 
+
+Faro, Portugal
+
+2018-2020
+
+Thesis: Alternative Splicing Mediated cis-regulation in Breast Cancer Risk
+
+### University of Lisbon, Pharmacy Faculty
+
+M.S. in Pharmaceutical Sciences
+
+Lisbon, Portugal
+
+2008-2014
+
+Thesis: Immune system role on Gaucher Disease
+
+
+Research Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+### Towards Master Thesis 
+
+University of Algarve, Faculty of Medicine and Biomedical Sciences
+
+Faro, Portugal
+
+2019 - 2020
+
+- Performed computational biology research towards understanding the impact common cis-regulation variants of alternative splicing in human breast cancer susceptibility.
+- Learned R, as well as Python, git, and BASH.
+- Used Bioinformatic tools (STAR, LeafCutter, tensorQTL, vcfTools, BamTools, etc)
+
+
+Publications and Posters {data-icon=file}
+--------------------------------------------------------------------------------
+
+### Exploring the role of alternative splicing in breast cancer risk.
+
+Poster for 2020 Webinar: Cancer Biology, From Basic to Translational Research
+Promoted by Liga Portuguesa Contra o Cancro
+
+Portugal
+
+2020
+
+**Duarte A**, Magno R, Martel P, Ghezzo M, Xavier J and Maia A.-T.
+
+### Alternative splicing in breast cancer risk
+
+Workflow to identify Alternative Splicing cis-regulatory variants in co-localization with GWAS Breast Cancer Risk hit-SNPs
+
+Portugal
+
+2020
+
+**Duarte, Andre**;   Magno, Ramiro;   Martel, Paulo;   Maia, Ana-Teresa
+
+
+<i class="fas fa-language"></i> Languages {}
+--------------------------------------------------------------------------------
+
+```{r, echo=FALSE, warning=FALSE, }
+library(kableExtra)
+lang <-  read.csv("laguages.csv",header = T, sep = ";",row.names = 1)
+knitr::kable(lang, align = "c", valign = 't') %>% kable_material(c("striped", "hover"), full_width = F)
+```
